@@ -25,3 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 5,
     });
 });
+
+const swiper = new Swiper('.swiper', {
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  watchOverflow: true,
+});

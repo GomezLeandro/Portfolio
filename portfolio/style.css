@@ -5,6 +5,7 @@
     --surface: rgba(255, 255, 255, 0.03);
     --text: #ffffff;
     --glow: 0 0 15px rgba(0, 242, 255, 0.3);
+    --swiper-navigation-size:23px;
 }
 
 * { 
@@ -223,6 +224,24 @@ h1 {
     opacity: 1;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: var(--primary);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+    color: #fffdfd;
+}
+
+
+.swiper-button-next { right: 15px; }
+.swiper-button-prev { left: 15px; }
+
 .contact-bar {
     margin-top: 80px;
     padding: 40px 0;
@@ -239,7 +258,7 @@ h1 {
     right: 0;
     width: 75vw;
     height: 80vh;
-    background: url('/fotoPerfil.png') no-repeat bottom right / contain;
+    background: url('/fotoPerfil1.png') no-repeat bottom right / contain;
     opacity: 0.12;
     filter: grayscale(100%) contrast(1.2);
     mix-blend-mode: screen;
