@@ -1,0 +1,262 @@
+:root {
+    --primary: #00f2ff; 
+    --secondary: #1a1a1a;
+    --bg-dark: #0a0a0a; 
+    --surface: rgba(255, 255, 255, 0.03);
+    --text: #ffffff;
+    --glow: 0 0 15px rgba(0, 242, 255, 0.3);
+}
+
+* { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 10%; 
+    position: relative;
+}
+
+/* Esquinas decorativas */
+.main-wrapper::before, .main-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--primary);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.main-wrapper::before {
+    top: 20px; left: 20px;
+    border-right: none; border-bottom: none;
+}
+
+.main-wrapper::after {
+    bottom: 20px; right: 20px;
+    border-left: none; border-top: none;
+}
+
+header {
+    border-left: 5px solid var(--primary);
+    padding: 20px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+}
+
+h1 { 
+    font-family: 'Orbitron', sans-serif; 
+    font-size: clamp(2rem, 5vw, 3.5rem); 
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.sub-title { 
+    color: var(--primary); 
+    font-weight: bold; 
+    letter-spacing: 5px; 
+    font-size: 1rem;
+}
+
+.content-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.card {
+    padding: 30px;
+    background: var(--surface);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+}
+
+.card h2 {
+    color: var(--primary);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.tech-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tech-list li::before { content: "// "; color: var(--primary); font-weight: bold; }
+
+.projects-header {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* CORREGIDO: Una sola declaración */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 25px;
+    background: rgba(255,255,255,0.02);
+    transition: all 0.4s ease-in-out; /* Moví la transición aquí */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-bottom-color: var(--primary);
+    transform: translateY(-5px);
+}
+
+.project-item h3 { font-family: 'Orbitron'; font-size: 1.1rem; margin-bottom: 10px; color: var(--text); }
+
+.project-frame {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.project-frame::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: -1px; width: 10px; height: 10px;
+    border-top: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+}
+
+.swiper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%); 
+    transition: filter 0.3s;
+    display: block;
+}
+
+.project-item:hover .swiper-slide img {
+    filter: grayscale(0%);
+}
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    width: 8px; height: 8px;
+    background: transparent !important;
+    border: 1px solid var(--primary);
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary) !important;
+    box-shadow: 0 0 10px var(--primary);
+    opacity: 1;
+}
+
+.contact-bar {
+    margin-top: 80px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Chatbot Section */
+#chatbot-btn {
+    position: fixed; bottom: 40px; right: 40px;
+    width: 55px; height: 55px;
+    background: #000; border: 1px solid var(--primary);
+    color: var(--primary); border-radius: 4px;
+    cursor: pointer; z-index: 1000; box-shadow: var(--glow);
+}
+
+#chat-window {
+    position: fixed; bottom: 110px; right: 40px;
+    width: 350px; height: 450px;
+    background: var(--bg-dark); /* Usando variable */
+    border: 1px solid var(--primary);
+    display: none; flex-direction: column; z-index: 1001;
+}
+
+.chat-header { 
+    background: var(--primary); 
+    color: #000; padding: 10px; 
+    font-family: 'Orbitron'; 
+    font-size: 0.7rem; font-weight: bold; 
+    display: flex; justify-content: space-between; 
+}
+
+.background-portrait {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 45vw; /* Ocupa casi la mitad del ancho de la pantalla */
+    height: 80vh; /* Se asoma desde abajo */
+    background-image: url('/fotoPerfil.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+    /* EL SECRETO PROFESIONAL: */
+    opacity: 0.12; /* Casi imperceptible, muy sutil */
+    filter: grayscale(100%) contrast(1.2);
+    mix-blend-mode: screen; /* Se funde con el negro del fondo */
+    pointer-events: none; /* No interfiere con clics o selección de texto */
+    z-index: -1; /* Se dibuja detrás de todo el contenido */
+    
+    transition: opacity 0.8s ease;
+}
+
+/* Efecto reactivo: cuando el usuario no está haciendo nada, 
+   la imagen cobra un mínimo de presencia extra */
+body:hover .background-portrait {
+    opacity: 0.18;
+}
+
+/* En móviles la quitamos para no ensuciar la pantalla pequeña */
+@media (max-width: 768px) {
+    .background-portrait {
+        display: none;
+    }
+}
+
+#chat-messages { flex: 1; overflow-y: auto; padding: 15px; font-size: 0.85rem; color: #ccc; }
+.chat-input-area { display: flex; border-top: 1px solid rgba(255,255,255,0.1); }
+#chat-input { flex: 1; background: transparent; border: none; color: var(--text); padding: 15px; outline: none; }
+#send-btn { background: transparent; color: var(--primary); border: none; padding: 0 20px; cursor: pointer; font-weight: bold; }
+
+@media (max-width: 900px) {
+    .content-top { grid-template-columns: 1fr; }
+    .main-wrapper { padding: 40px 5%; }
+}
+
+@media (min-width:1200px) {
+    .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    }
+}

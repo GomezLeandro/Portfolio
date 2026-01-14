@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Gómez | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header>
+            <h1 id="title">LEANDRO GÓMEZ</h1>
+            <p id="subtitle" class="sub-title">Técnico Programador Universitario | Full Stack Developer</p>
+        </header>
+
+        <div class="content-top">
+            <section class="card">
+                <h2 id="about-title">01. SOBRE_MI</h2>
+                <p id="about-text">Soy Técnico Programador Universitario recibido en la Unsam con experiencia en el desarrollo de aplicaciones Full Stack utilizando Java/Spring Boot y React. Mi enfoque se centra en la construcción de servicios robustos y el consumo de APIs, priorizando siempre la claridad del código y la arquitectura limpia. He trabajado en la integración de soluciones técnicas para plataformas como Playground en Digital House y en el despliegue de proyectos independientes donde gestioné bases de datos SQL y NoSQL. Actualmente, busco profundizar mis conocimientos en herramientas de despliegue como Docker, las cuales he comenzado a integrar en mis flujos de desarrollo personal para optimizar el ciclo de vida del software.</p>
+            </section>
+
+            <aside class="card">
+                <h2 id="tech-title">02. STACK_TECNOLÓGICO</h2>
+                <ul class="tech-list">
+                    <li>Spring Boot</li>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                    <li>React</li>
+                    <li>JS Vanilla</li>
+                    <li>Bases de datos SQL y NoSQL</li>
+                    <li>Git / Github</li>
+                    <li>CI/CD</li>
+                </ul>
+            </aside>
+        </div>
+
+        <h2 id="projects-title" class="projects-header">03. PROYECTOS</h2>
+        
+        <section class="projects-grid">
+            <article class="project-item">
+                <div class="project-frame">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="" alt="Astra-PC 1"></div>
+                            <div class="swiper-slide"><img src="" alt="Astra-PC 2"></div>
+                            <div class="swiper-slide"><img src="" alt="Astra-PC 3"></div>
+                            <div class="swiper-slide"><img src="" alt="Astra-PC 4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <h3>ASTRA-PC (Miami, FL)</h3>
+                <p>Plataforma corporativa para estudio jurídico internacional. Implementación en WordPress con optimización de rendimiento y diseño de alta disponibilidad.</p>
+            </article>
+
+            <article class="project-item">
+                <div class="project-frame">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="" alt="Zira Tech 1"></div>
+                            <div class="swiper-slide"><img src="" alt="Zira Tech 2"></div>
+                            <div class="swiper-slide"><img src="" alt="Zira Tech 3"></div>
+                            <div class="swiper-slide"><img src="" alt="Zira Tech 4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <h3>ZIRA TECH | Consultoría IT</h3>
+                <p>SPA en React.js con arquitectura de componentes reutilizables. Navegación fluida (React Router) y estructura optimizada para SEO/UX.</p>
+            </article>
+
+            <article class="project-item">
+                <div class="project-frame">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="" alt="Portfolio 1"></div>
+                            <div class="swiper-slide"><img src="" alt="Portfolio 2"></div>
+                            <div class="swiper-slide"><img src="" alt="Portfolio 3"></div>
+                            <div class="swiper-slide"><img src="" alt="Portfolio 4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <h3>PORTFOLIO PERSONAL (CHATBOT INTELIGENTE)</h3>
+                <p>Interfaz inspirada en terminales con JS Vanilla e integración de IA (Google Gemini API). Sistema dinámico de temas y arquitectura modular.</p>
+            </article>
+
+            <article class="project-item">
+                <div class="project-frame">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="" alt="Blockly 1"></div>
+                            <div class="swiper-slide"><img src="" alt="Blockly 2"></div>
+                            <div class="swiper-slide"><img src="" alt="Blockly 3"></div>
+                            <div class="swiper-slide"><img src="" alt="Blockly 4"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <h3>JUEGO CON GOOGLE BLOCKLY</h3>
+                <p>Desarrollo de entorno educativo lógico utilizando Google Blockly para la enseñanza de fundamentos de programación mediante bloques interactivos.</p>
+            </article>
+        </section>
+
+        <footer class="contact-bar">
+            <span><i class="fas fa-at"></i> LEANDROMATIASGOMEZ@GMAIL.COM</span>
+            <span><i class="fas fa-map-marker-alt"></i> BUENOS AIRES, ARGENTINA</span>
+            <span><i class="fas fa-phone"></i> +54 9 11 3523-7836</span>
+        </footer>
+
+        <div class="background-portrait"></div>
+    </div>
+
+    <button id="chatbot-btn"><i class="fas fa-code"></i></button>
+    <div id="chat-window">
+        <div class="chat-header">
+            <span>CHATBOT INTELIGENTE</span>
+            <button id="close-chat" style="background:none; border:none; cursor:pointer; color:inherit;">X</button>
+        </div>
+        <div id="chat-messages"></div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Consultar sistema...">
+            <button id="send-btn">SEND</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./src/script.js"></script>
+    <script type="module" src="./src/iaChatbot.js"></script>
+</body>
+</html>
