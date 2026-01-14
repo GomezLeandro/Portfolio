@@ -56,11 +56,31 @@ Professional IT Recruitment Assistant for Leandro Gomez. Your goal is to highlig
   "about_title": "01. SOBRE_MI",
   "about_text": "Soy Técnico Programador Universitario recibido en la Unsam con experiencia en el desarrollo de aplicaciones Full Stack utilizando Java/Spring Boot y React. Mi enfoque se centra en la construcción de servicios robustos y el consumo de APIs, priorizando siempre la claridad del código y la arquitectura limpia. He trabajado en la integración de soluciones técnicas para plataformas como Playground en Digital House y en el despliegue de proyectos independientes donde gestioné bases de datos SQL y NoSQL. Actualmente, busco profundizar mis conocimientos en herramientas de despliegue como Docker, las cuales he comenzado a integrar en mis flujos de desarrollo personal para optimizar el ciclo de vida del software.",
   "tech_title": "02. STACK_TECNOLÓGICO",
-  "projects_title": "03. PROYECTOS"
+  "projects_title": "03. PROYECTOS",
+  "description_0: "Ecosistema digital desarrollado para MM Ingeniería, especialistas en la fabricación de maquinaria para la transformación de residuos orgánicos en subproductos ecológicos. El proyecto se centró en comunicar procesos técnicos complejos (método erTH) mediante una interfaz limpia y profesional en WordPress. Incluye optimización de tiempos de carga y una estructura de contenidos pensada para convertir visitas en consultas técnicas especializadas.",
+  "description_1": "Plataforma web corporativa diseñada para un estudio de abogados en Estados Unidos. Realizada íntegramente en WordPress con un enfoque en el rendimiento técnico y la experiencia de usuario (UX). Implementación de diseño responsivo de alta gama y optimización SEO técnica para mejorar el posicionamiento en el mercado legal competitivo de Florida.",
+  "description_2": "Desarrollo de plataforma corporativa desarrollada integralmente en React con Vite, optimizada para alto rendimiento y SEO técnico.",
+  "description_2_1: "El proyecto se destaca por una arquitectura basada en componentes desacoplados y reutilizables, diseñada especificamente para garantizar la escalabilidad del producto a largo plazo.",
+  "description_2_2": "El codigo sigue principios de Clean Code con una organizacion semántica y logica para facilitar el mantenimiento futuro.",
+  "description_2_3": "Implementación de diseño responsivo componentes reutilizables para mejorar la experiencia del usuario en múltiples dispositivos. ",
+  "project_3": "PORTFOLIO PERSONAL (CHATBOT INTELIGENTE)",
+  "description_3": "Este proyecto no es solo una vitrina de trabajos, sino una plataforma de experimentación en UX conversacional. Desarrollado con una estética Cyberpunk Minimalista, el sitio integra un Asistente de IA personalizado capaz de responder sobre mi stack tecnológico y trayectoria en tiempo real.",
+  "description_3_1" : "Características destacadas:",
+  "description_3_2": "Traducción Inteligente: Utiliza la capacidad de la IA para traducir dinámicamente todo el contenido del portfolio al idioma que el usuario prefiera, rompiendo las barreras lingüísticas de forma instantánea.",
+  "description_3_3": "Pipeline de CI/CD: Desplegado en Vercel, lo que garantiza una integración y despliegue continuos; cada mejora en el código se refleja en producción automáticamente tras pasar los controles de calidad.",
+  "description_3_4": "Arquitectura con Vite: Construido sobre Vite para asegurar una experiencia de desarrollo ágil y tiempos de carga ultrarrápidos en el navegador.",
+  "description_3_5": "Estructura Dinámica: La arquitectura se basa en una gestión de datos que permite la actualización fluida de contenidos y componentes optimizados para el rendimiento.",
+  "project_4": "JUEGO CON GOOGLE BLOCKLY",
+  "description_4": "Desarrollo de entorno educativo lógico utilizando Google Blockly para la enseñanza de fundamentos de programación mediante bloques interactivos."
 }
 
 If the user asks to change the language or translate the site, return ONLY a JSON object. 
 IMPORTANT: Do not use Markdown formatting like \`\`\`json. Return the raw string.
+### SUGGESTIONS RULE
+At the end of every conversational response (NOT in JSON translations), 
+add a new line starting with "SUGGESTIONS:" followed by 3 short 
+one-sentence questions the user might ask next, separated by semicolons.
+Example: SUGGESTIONS: Tell me about Java '\n' How to contact him?'\n' See projects.
 USER QUERY: ${prompt}`
                     }]
                 }],
@@ -135,6 +155,21 @@ function applyTranslation(data) {
         document.getElementById('about-text').innerText = data.about_text;
         document.getElementById('tech-title').innerText = data.tech_title;
         document.getElementById('projects-title').innerText = data.projects_title;
+        document.getElementById('description-0').innerText = data.description_0;
+        document.getElementById('description-1').innerText = data.description_1;
+        document.getElementById('description-2').innerText = data.description_2;
+        document.getElementById('description-2.1').innerText = data.description_2_1;
+        document.getElementById('description-2.2').innerText = data.description_2_2;
+        document.getElementById('description-2.3').innerText = data.description_2_3;
+        document.getElementById('project-3').innerText = data.project_3;
+        document.getElementById('description-3').innerText = data.description_3;
+        document.getElementById('description-3.1').innerText = data.description_3_1;
+        document.getElementById('description-3.2').innerText = data.description_3_2;
+        document.getElementById('description-3.3').innerText = data.description_3_3;
+        document.getElementById('description-3.4').innerText = data.description_3_4;
+        document.getElementById('description-3.5').innerText = data.description_3_5;
+        document.getElementById('project-4').innerText = data.project_4;
+        document.getElementById('description-4').innerText = data.description_4;
         
         addMessage('Sistema', 'Idioma actualizado correctamente.');
     } catch (e) {
