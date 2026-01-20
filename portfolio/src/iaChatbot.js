@@ -71,7 +71,12 @@ Professional IT Recruitment Assistant for Leandro Gomez. Your goal is to highlig
   "description_3_4": "Arquitectura con Vite: Construido sobre Vite para asegurar una experiencia de desarrollo ágil y tiempos de carga ultrarrápidos en el navegador.",
   "description_3_5": "Estructura Dinámica: La arquitectura se basa en una gestión de datos que permite la actualización fluida de contenidos y componentes optimizados para el rendimiento.",
   "project_4": "JUEGO CON GOOGLE BLOCKLY",
-  "description_4": "Desarrollo de entorno educativo lógico utilizando Google Blockly para la enseñanza de fundamentos de programación mediante bloques interactivos."
+  "description_4": "BLOCKLY: TRANSPILADOR VISUAL Y MOTOR DE SIMULACIÓN",
+  "description_4_1": "Decisiones de implementación:",
+  "description_4_2": "Shadow Execution: En lugar de mover el avión en tiempo real mientras se evalúa el código, implementé un motor que genera una moveQueue. Esta cola de movimientos permite validar colisiones y límites del mapa antes de que empiece la animación, asegurando que el estado visual esté siempre sincronizado con la lógica interna.",
+  "description_4_3": "Gestión de colisiones por proximidad: Para evitar los errores de precisión del punto flotante en JavaScript, desarrollé una función de tolerancia (isSameTile). Esto garantiza que el contacto con obstáculos se detecte de forma consistente sin depender de coordenadas exactas al píxel.",
+  "description_4_4": "Feedback de UI por topología de bloques: Configuré listeners en el workspace para analizar la conexión de los bloques. El sistema detecta \"nodos huérfanos\" (bloques sin padre ejecutable) y aplica transformaciones de opacidad en el DOM de Blockly, eliminando ruido visual y errores de ejecución silenciosos.",
+  "description_4_5": "Arquitectura de estados en React: Utilicé una estructura desacoplada donde Blockly solo actúa como el emisor de lógica, el motor físico procesa los datos y React se limita a reflejar esos cambios de posición, manteniendo el componente de vista liviano y eficiente."
 }
 
 If the user asks to change the language or translate the site, return ONLY a JSON object. 
@@ -170,6 +175,11 @@ function applyTranslation(data) {
         document.getElementById('description-3.5').innerText = data.description_3_5;
         document.getElementById('project-4').innerText = data.project_4;
         document.getElementById('description-4').innerText = data.description_4;
+        document.getElementById('description-4.1').innerText = data.description_4_1;
+        document.getElementById('description-4.2').innerText = data.description_4_2;
+        document.getElementById('description-4.3').innerText = data.description_4_3;
+        document.getElementById('description-4.4').innerText = data.description_4_4;
+        document.getElementById('description-4.5').innerText = data.description_4_5;
         
         addMessage('Sistema', 'Idioma actualizado correctamente.');
     } catch (e) {
