@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Gomez Leandro, Desarrollador Full Stack."
+    />
     <title>Leandro Gómez | Full Stack Developer</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -30,277 +34,452 @@
           Técnico Programador Universitario | Full Stack Developer
         </p>
       </header>
+      <main>
+        <div class="content-top">
+          <section class="card">
+            <h2 id="about-title">01. SOBRE_MI</h2>
+            <p id="about-text">
+              Soy Técnico Programador Universitario recibido en la Unsam con
+              experiencia en el desarrollo de aplicaciones Full Stack utilizando
+              Java/Spring Boot y React. Mi enfoque se centra en la construcción
+              de servicios robustos y el consumo de APIs, priorizando siempre la
+              claridad del código y la arquitectura limpia. He trabajado en la
+              integración de soluciones técnicas para plataformas como
+              Playground en Digital House y en el despliegue de proyectos
+              independientes donde gestioné bases de datos SQL y NoSQL.
+              Actualmente, busco profundizar mis conocimientos en herramientas
+              de despliegue como Docker, las cuales he comenzado a integrar en
+              mis flujos de desarrollo personal para optimizar el ciclo de vida
+              del software.
+            </p>
+          </section>
 
-      <div class="content-top">
-        <section class="card">
-          <h2 id="about-title">01. SOBRE_MI</h2>
-          <p id="about-text">
-            Soy Técnico Programador Universitario recibido en la Unsam con
-            experiencia en el desarrollo de aplicaciones Full Stack utilizando
-            Java/Spring Boot y React. Mi enfoque se centra en la construcción de
-            servicios robustos y el consumo de APIs, priorizando siempre la
-            claridad del código y la arquitectura limpia. He trabajado en la
-            integración de soluciones técnicas para plataformas como Playground
-            en Digital House y en el despliegue de proyectos independientes
-            donde gestioné bases de datos SQL y NoSQL. Actualmente, busco
-            profundizar mis conocimientos en herramientas de despliegue como
-            Docker, las cuales he comenzado a integrar en mis flujos de
-            desarrollo personal para optimizar el ciclo de vida del software.
-          </p>
+          <aside class="card">
+            <h2 id="tech-title">02. STACK_TECNOLÓGICO</h2>
+            <ul class="tech-list">
+              <li>Spring Boot</li>
+              <li>Java</li>
+              <li>Kotlin</li>
+              <li>React</li>
+              <li>JS Vanilla</li>
+              <li>DB SQL y NoSQL</li>
+              <li>GenAI</li>
+              <li>Git / Github</li>
+              <li>CI/CD</li>
+            </ul>
+          </aside>
+        </div>
+
+        <h2 id="projects-title" class="projects-header">03. PROYECTOS</h2>
+        <section class="projects-grid">
+          <article class="project-item">
+            <div class="project-frame">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/zira_compu-medium.webp"
+                      srcset="
+                        /zira_compu-small.webp  400w,
+                        /zira_compu-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Ziratech version navegador"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/ziraTablet-medium.webp"
+                      srcset="
+                        /ziraTablet-small.webp  400w,
+                        /ziraTablet-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto ziratech version tablet"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/ziraCelu-medium.webp"
+                      srcset="
+                        /ziraCelu-small.webp  400w,
+                        /ziraCelu-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto ziratech version celular"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <h3 id="project-2">ZIRA TECH | Consultoría IT</h3>
+            <p id="description-2">
+              Desarrollo de plataforma corporativa desarrollada integralmente en
+              React con Vite, optimizada para alto rendimiento y SEO técnico.
+            </p>
+            <p id="description-2.1">
+              El proyecto se destaca por una arquitectura basada en componentes
+              desacoplados y reutilizables, diseñada especificamente para
+              garantizar la escalabilidad del producto a largo plazo.
+            </p>
+            <p id="description-2.2">
+              El código sigue principios de Clean Code con una organizacion
+              semántica y logica para facilitar el mantenimiento futuro."
+            </p>
+            <p id="description-2.3">
+              Implementación de diseño responsivo componentes reutilizables para
+              mejorar la experiencia del usuario en múltiples dispositivos.
+            </p>
+            <a href="https://www.ziratech.com.ar/">
+              URL: https://www.ziratech.com.ar/
+            </a>
+            <a href="https://github.com/GomezLeandro/ziratech">
+              Github: https://github.com/GomezLeandro/ziratech/
+            </a>
+          </article>
+
+          <article class="project-item">
+            <div class="project-frame">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/portPC-medium.webp"
+                      srcset="/portPC-small.webp 400w, /portPC-medium.webp 800w"
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Portfolio personal version computadora"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/portTablet-medium.webp"
+                      srcset="
+                        /portTablet-small.webp  400w,
+                        /portTablet-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Portfolio personal version tablet"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/portCelu-medium.webp"
+                      srcset="
+                        /portCelu-small.webp  400w,
+                        /portCelu-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 600px"
+                      alt="Captura de pantalla del proyecto portfolio personal version celular"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <h3 id="project-3">PORTFOLIO PERSONAL (CHATBOT INTELIGENTE)</h3>
+            <p id="description-3">
+              Este proyecto no es solo una vitrina de trabajos, sino una
+              plataforma de experimentación en UX conversacional. Desarrollado
+              con una estética Cyberpunk Minimalista, el sitio integra un
+              Asistente de IA personalizado capaz de responder sobre mi stack
+              tecnológico y trayectoria en tiempo real.
+            </p>
+            <p id="description-3.1">Características destacadas:</p>
+            <p id="description-3.2">
+              Traducción Inteligente: Utiliza la capacidad de la IA para
+              traducir dinámicamente todo el contenido del portfolio al idioma
+              que el usuario prefiera, rompiendo las barreras lingüísticas de
+              forma instantánea.
+            </p>
+            <p id="description-3.3">
+              Pipeline de CI/CD: Desplegado en Vercel, lo que garantiza una
+              integración y despliegue continuos; cada mejora en el código se
+              refleja en producción automáticamente tras pasar los controles de
+              calidad.
+            </p>
+            <p id="description-3.4">
+              Arquitectura con Vite: Construido sobre Vite para asegurar una
+              experiencia de desarrollo ágil y tiempos de carga ultrarrápidos en
+              el navegador.
+            </p>
+            <p id="description-3.5">
+              Estructura Dinámica: La arquitectura se basa en una gestión de
+              datos que permite la actualización fluida de contenidos y
+              componentes optimizados para el rendimiento.
+            </p>
+            <a href="https://portfolio-bay-alpha-ggxzftrh6k.vercel.app/">
+              URL: https://portfolio-bay-alpha-ggxzftrh6k.vercel.app/
+            </a>
+            <a href="https://github.com/GomezLeandro/Portfolio">
+              Github: https://github.com/GomezLeandro/Portfolio/
+            </a>
+          </article>
+
+          <article class="project-item">
+            <div class="project-frame">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/blocklyWin-medium.webp"
+                      srcset="
+                        /blocklyWin-small.webp  400w,
+                        /blocklyWin-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 299px, 400px"
+                      alt="Captura de pantalla del proyecto Blocly version ganar"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/blocklyCrash-medium.webp"
+                      srcset="
+                        /blocklyCrash-small.webp  400w,
+                        /blocklyCrash-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto blockly version bloquear"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/blocklyOut-medium.webp"
+                      srcset="
+                        /blocklyOut-small.webp  400w,
+                        /blocklyOut-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 299px, 400px"
+                      alt="Captura de pantalla del proyecto A version outofbounds"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <h3 id="project-4">
+              BLOCKLY: TRANSPILADOR VISUAL Y MOTOR DE SIMULACIÓN
+            </h3>
+            <p id="description-4">
+              Este proyecto es un entorno de ejecución donde el código generado
+              por bloques no se interpreta en caliente, sino que pasa por un
+              proceso de pre-computación. El objetivo fue separar la intención
+              del usuario (el bloque) del renderizado final, manejando la lógica
+              del juego como un flujo de estados predecibles.
+            </p>
+            <p id="description-4.1">Decisiones de implementación:</p>
+            <p id="description-4.2">
+              Shadow Execution: En lugar de mover el avión en tiempo real
+              mientras se evalúa el código, implementé un motor que genera una
+              moveQueue. Esta cola de movimientos permite validar colisiones y
+              límites del mapa antes de que empiece la animación, asegurando que
+              el estado visual esté siempre sincronizado con la lógica interna.
+            </p>
+            <p id="description-4.3">
+              Gestión de colisiones por proximidad: Para evitar los errores de
+              precisión del punto flotante en JavaScript, desarrollé una función
+              de tolerancia (isSameTile). Esto garantiza que el contacto con
+              obstáculos se detecte de forma consistente sin depender de
+              coordenadas exactas al píxel.
+            </p>
+            <p id="description-4.4">
+              Feedback de UI por topología de bloques: Configuré listeners en el
+              workspace para analizar la conexión de los bloques. El sistema
+              detecta "nodos huérfanos" (bloques sin padre ejecutable) y aplica
+              transformaciones de opacidad en el DOM de Blockly, eliminando
+              ruido visual y errores de ejecución silenciosos.
+            </p>
+            <p id="description-4.5">
+              Arquitectura de estados en React: Utilicé una estructura
+              desacoplada donde Blockly solo actúa como el emisor de lógica, el
+              motor físico procesa los datos y React se limita a reflejar esos
+              cambios de posición, manteniendo el componente de vista liviano y
+              eficiente.
+            </p>
+            <a href="https://blockly-game-mocha.vercel.app/">
+              URL: https://blockly-game-mocha.vercel.app/
+            </a>
+            <a href="https://github.com/GomezLeandro/blocklyGame">
+              Github: https://github.com/GomezLeandro/blocklyGame
+            </a>
+          </article>
+          <article class="project-item">
+            <div class="project-frame">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/mmingPC-medium.webp"
+                      srcset="
+                        /mmingPC-small.webp  400w,
+                        /mmingPC-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto mmingenieria version computadora"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/mmingTablet-medium.webp"
+                      srcset="
+                        /mmingTablet-small.webp  400w,
+                        /mmingTablet-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto mmingenieria version tablet"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/mmingCelu-medium.webp"
+                      srcset="
+                        /mmingCelu-small.webp  400w,
+                        /mmingCelu-medium.webp 800w
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto mmingenieria version celular "
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                      fetchpriority="high"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <h3 id="project-0">MMINGENIERIA</h3>
+            <p id="description-0">
+              Ecosistema digital desarrollado para MM Ingeniería, especialistas
+              en la fabricación de maquinaria para la transformación de residuos
+              orgánicos en subproductos ecológicos. El proyecto se centró en
+              comunicar procesos técnicos complejos (método erTH) mediante una
+              interfaz limpia y profesional en WordPress. Incluye optimización
+              de tiempos de carga y una estructura de contenidos pensada para
+              convertir visitas en consultas técnicas especializadas.
+            </p>
+            <a href="https://mmingenieria.com.ar/">
+              URL: https://mmingenieria.com.ar/
+            </a>
+          </article>
+          <article class="project-item">
+            <div class="project-frame">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="/astraPc-medium.webp"
+                      srcset="
+                        /astraPc-small.webp   400w,
+                        /astraPc-medium.webp  800w,
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Astra"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                       fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/astraTablet-medium.webp"
+                      srcset="
+                        /astraTablet-small.webp   400w,
+                        /astraTablet-medium.webp  800w,
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Astra"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                       fetchpriority="high"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="/astraTablet-medium.webp"
+                      srcset="
+                        /astraTablet-small.webp   400w,
+                        /astraTablet-medium.webp  800w,
+                      "
+                      sizes="(max-width: 600px) 300px, 800px"
+                      alt="Captura de pantalla del proyecto Astra"
+                      loading="lazy"
+                      width="299"
+                      height="239"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <h3 id="project-1">ASTRA-PC (Miami, FL)</h3>
+            <p id="description-1">
+              Plataforma web corporativa diseñada para un estudio de abogados en
+              Estados Unidos. Realizada íntegramente en WordPress con un enfoque
+              en el rendimiento técnico y la experiencia de usuario (UX).
+              Implementación de diseño responsivo de alta gama y optimización
+              SEO técnica para mejorar el posicionamiento en el mercado legal
+              competitivo de Florida.
+            </p>
+            <a href=" https://www.astra-pc.com/">
+              URL: https://www.astra-pc.com/
+            </a>
+          </article>
         </section>
-
-        <aside class="card">
-          <h2 id="tech-title">02. STACK_TECNOLÓGICO</h2>
-          <ul class="tech-list">
-            <li>Spring Boot</li>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>React</li>
-            <li>JS Vanilla</li>
-            <li>DB SQL y NoSQL</li>
-            <li>GenAI</li>
-            <li>Git / Github</li>
-            <li>CI/CD</li>
-          </ul>
-        </aside>
-      </div>
-
-      <h2 id="projects-title" class="projects-header">03. PROYECTOS</h2>
-      <section class="projects-grid">
-        <article class="project-item">
-          <div class="project-frame">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/zira_compu.webp" alt="Zira Tech 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/ziraTablet.webp" alt="Zira Tech 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/ziraCelu.webp" alt="Zira Tech 3" />
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <h3 id="project-2">ZIRA TECH | Consultoría IT</h3>
-          <p id="description-2">
-            Desarrollo de plataforma corporativa desarrollada integralmente en
-            React con Vite, optimizada para alto rendimiento y SEO técnico.
-          </p>
-          <p id="description-2.1">
-            El proyecto se destaca por una arquitectura basada en componentes
-            desacoplados y reutilizables, diseñada especificamente para
-            garantizar la escalabilidad del producto a largo plazo.
-          </p>
-          <p id="description-2.2">
-            El código sigue principios de Clean Code con una organizacion
-            semántica y logica para facilitar el mantenimiento futuro."
-          </p>
-          <p id="description-2.3">
-            Implementación de diseño responsivo componentes reutilizables para
-            mejorar la experiencia del usuario en múltiples dispositivos.
-          </p>
-          <a href="https://www.ziratech.com.ar/">
-            URL: https://www.ziratech.com.ar/
-          </a>
-          <a href="https://github.com/GomezLeandro/ziratech">
-            Github: https://github.com/GomezLeandro/ziratech/
-          </a>
-        </article>
-
-        <article class="project-item">
-          <div class="project-frame">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/portPC.webp" alt="Portfolio 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/portTablet.webp" alt="Portfolio 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/portCelu.webp" alt="Portfolio 3" />
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <h3 id="project-3">PORTFOLIO PERSONAL (CHATBOT INTELIGENTE)</h3>
-          <p id="description-3">
-            Este proyecto no es solo una vitrina de trabajos, sino una
-            plataforma de experimentación en UX conversacional. Desarrollado con
-            una estética Cyberpunk Minimalista, el sitio integra un Asistente de
-            IA personalizado capaz de responder sobre mi stack tecnológico y
-            trayectoria en tiempo real.
-          </p>
-          <p id="description-3.1">Características destacadas:</p>
-          <p id="description-3.2">
-            Traducción Inteligente: Utiliza la capacidad de la IA para traducir
-            dinámicamente todo el contenido del portfolio al idioma que el
-            usuario prefiera, rompiendo las barreras lingüísticas de forma
-            instantánea.
-          </p>
-          <p id="description-3.3">
-            Pipeline de CI/CD: Desplegado en Vercel, lo que garantiza una
-            integración y despliegue continuos; cada mejora en el código se
-            refleja en producción automáticamente tras pasar los controles de
-            calidad.
-          </p>
-          <p id="description-3.4">
-            Arquitectura con Vite: Construido sobre Vite para asegurar una
-            experiencia de desarrollo ágil y tiempos de carga ultrarrápidos en
-            el navegador.
-          </p>
-          <p id="description-3.5">
-            Estructura Dinámica: La arquitectura se basa en una gestión de datos
-            que permite la actualización fluida de contenidos y componentes
-            optimizados para el rendimiento.
-          </p>
-          <a href="https://portfolio-bay-alpha-ggxzftrh6k.vercel.app/">
-            URL: https://portfolio-bay-alpha-ggxzftrh6k.vercel.app/
-          </a>
-          <a href="https://github.com/GomezLeandro/Portfolio">
-            Github: https://github.com/GomezLeandro/Portfolio/
-          </a>
-        </article>
-
-        <article class="project-item">
-          <div class="project-frame">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="blocklyWin.webp" alt="Blockly 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="blocklyCrash.webp" alt="Blockly 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="blocklyOut.webp" alt="Blockly 3" />
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <h3 id="project-4">
-            BLOCKLY: TRANSPILADOR VISUAL Y MOTOR DE SIMULACIÓN
-          </h3>
-          <p id="description-4">
-            Este proyecto es un entorno de ejecución donde el código generado
-            por bloques no se interpreta en caliente, sino que pasa por un
-            proceso de pre-computación. El objetivo fue separar la intención del
-            usuario (el bloque) del renderizado final, manejando la lógica del
-            juego como un flujo de estados predecibles.
-          </p>
-          <p id="description-4.1">Decisiones de implementación:</p>
-          <p id="description-4.2">
-            Shadow Execution: En lugar de mover el avión en tiempo real mientras
-            se evalúa el código, implementé un motor que genera una moveQueue.
-            Esta cola de movimientos permite validar colisiones y límites del
-            mapa antes de que empiece la animación, asegurando que el estado
-            visual esté siempre sincronizado con la lógica interna.
-          </p>
-          <p id="description-4.3">
-            Gestión de colisiones por proximidad: Para evitar los errores de
-            precisión del punto flotante en JavaScript, desarrollé una función
-            de tolerancia (isSameTile). Esto garantiza que el contacto con
-            obstáculos se detecte de forma consistente sin depender de
-            coordenadas exactas al píxel.
-          </p>
-          <p id="description-4.4">
-            Feedback de UI por topología de bloques: Configuré listeners en el
-            workspace para analizar la conexión de los bloques. El sistema
-            detecta "nodos huérfanos" (bloques sin padre ejecutable) y aplica
-            transformaciones de opacidad en el DOM de Blockly, eliminando ruido
-            visual y errores de ejecución silenciosos.
-          </p>
-          <p id="description-4.5">
-            Arquitectura de estados en React: Utilicé una estructura desacoplada
-            donde Blockly solo actúa como el emisor de lógica, el motor físico
-            procesa los datos y React se limita a reflejar esos cambios de
-            posición, manteniendo el componente de vista liviano y eficiente.
-          </p>
-          <a href="https://blockly-game-mocha.vercel.app/">
-            URL: https://blockly-game-mocha.vercel.app/
-          </a>
-          <a href="https://github.com/GomezLeandro/blocklyGame">
-            Github: https://github.com/GomezLeandro/blocklyGame
-          </a>
-        </article>
-        <article class="project-item">
-          <div class="project-frame">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/mmingPC.webp" alt="mmingenieria 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/mmingTablet.webp" alt="mmingenieria 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/mmingCelu.webp" alt="mmingenieria 3" />
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <h3 id="project-0">MMINGENIERIA</h3>
-          <p id="description-0">
-            Ecosistema digital desarrollado para MM Ingeniería, especialistas en
-            la fabricación de maquinaria para la transformación de residuos
-            orgánicos en subproductos ecológicos. El proyecto se centró en
-            comunicar procesos técnicos complejos (método erTH) mediante una
-            interfaz limpia y profesional en WordPress. Incluye optimización de
-            tiempos de carga y una estructura de contenidos pensada para
-            convertir visitas en consultas técnicas especializadas.
-          </p>
-          <a href="https://mmingenieria.com.ar/">
-            URL: https://mmingenieria.com.ar/
-          </a>
-        </article>
-        <article class="project-item">
-          <div class="project-frame">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="/astraPc.webp" alt="Astra-PC 1" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/astraTablet.webp" alt="Astra-PC 2" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="/astraCelu.webp" alt="Astra-PC 3" />
-                </div>
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <h3 id="project-1">ASTRA-PC (Miami, FL)</h3>
-          <p id="description-1">
-            Plataforma web corporativa diseñada para un estudio de abogados en
-            Estados Unidos. Realizada íntegramente en WordPress con un enfoque
-            en el rendimiento técnico y la experiencia de usuario (UX).
-            Implementación de diseño responsivo de alta gama y optimización SEO
-            técnica para mejorar el posicionamiento en el mercado legal
-            competitivo de Florida.
-          </p>
-          <a href=" https://www.astra-pc.com/">
-            URL: https://www.astra-pc.com/
-          </a>
-        </article>
-      </section>
-
+      </main>
       <footer class="contact-bar">
         <span><i class="fas fa-at"></i> LEANDROMATIASGOMEZ@GMAIL.COM</span>
         <span
