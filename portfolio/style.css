@@ -258,7 +258,7 @@ h1 {
     right: 0;
     width: 75vw;
     height: 80vh;
-    background: url('/fotoPerfil1.png') no-repeat bottom right / contain;
+    background: url('/fotoPerfil1.webp') no-repeat bottom right / contain;
     opacity: 0.12;
     filter: grayscale(100%) contrast(1.2);
     mix-blend-mode: screen;
